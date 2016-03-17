@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>PosgreSQL Worksheet 1 by Anderson-Lab</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>PosgreSQL Worksheet 1</h1>
+        <p></p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/Anderson-Lab/posgreSQL-worksheet-1" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/Anderson-Lab/posgreSQL-worksheet-1/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/Anderson-Lab/posgreSQL-worksheet-1/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="installation-and-setup" class="anchor" href="#installation-and-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation and setup</h1>
+
+<ol>
+<li>sudo apt-get install postgresql</li>
+<li>sudo su postgres</li>
+<li>sudo createuser -s vagrant</li>
+<li>exit</li>
+<li>createdb vagrant</li>
+<li>wget <a href="http://www.sportsdb.org/modules/sd/assets/downloads/sportsdb_sample_postgresql.zip">http://www.sportsdb.org/modules/sd/assets/downloads/sportsdb_sample_postgresql.zip</a>
+</li>
+<li>unzip sportsdb_sample_postgresql.zip</li>
+<li>psql &lt; sportsdb_sample_postgresql_20080304.sql</li>
+</ol>
+
+<p>We are now ready! We now have a database that we can use and play around with!
+0. psql
+1. Get a list of the tables using \dt. There are a lot of tables that came from sportsdb_sample_postgresql_20080304.sql!
+2. What is the postgres command to get the information/schema about the following tables? Run that command on the table american_football_action_participants to the column names and the data types.
+3. Write a select statement that returns the yardage of all the players in the table american_football_action_participants.
+4. Write a select statement that returns the birth_date of all the persons in the tables persons.
+5. Now write a select statement with a join that returns the birth_date and yardage using both the persons and american_football_action_participants tables. In other words, join on the person_id. </p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/Anderson-Lab">Anderson-Lab</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
